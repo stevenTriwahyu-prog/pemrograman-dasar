@@ -1,0 +1,310 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMVRgooesR5N8GHbxtSTLAG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/stevenTriwahyu-prog/pemrograman-dasar/blob/main/pertemuan%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "id": "JVa4j17_a5va",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7253ab04-eafe-4b80-cf96-3276a901d52f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "p\n"
+          ]
+        }
+      ],
+      "source": [
+        "x = 'polibatam'\n",
+        "print(x[0])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 'polibatam'\n",
+        "x[0] = 'f'"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 159
+        },
+        "id": "7fWeM0JjdliY",
+        "outputId": "e3ca5f7b-8efb-47e2-d0a2-ad921602f68a"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "'str' object does not support item assignment",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-396543003.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mx\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m'polibatam'\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mx\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m'f'\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'str' object does not support item assignment"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 'polibatam'\n",
+        "print(x[2:])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JATwsnwpd6Yg",
+        "outputId": "fd78813e-f84a-45c2-8b8a-40610799271f"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "libatam\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"steven tri wahyu\"\n",
+        "print(f\"hello,nama saya {name}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9fggisDreJ8v",
+        "outputId": "bb018fe8-2d40-4687-b9e6-0cd7144eef8c"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello,nama saya steven tri wahyu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"steven tri wahyu\"\n",
+        "print(\"nama saya %s\" % (name))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8e42VV-TeuKH",
+        "outputId": "42d4241c-dc00-4d0b-c0fa-350d31431cc1"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nama saya steven tri wahyu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"steven tri wahyu\"\n",
+        "print(\"nama saya {}\".format(name))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tC09LOqYhc6f",
+        "outputId": "5e827df7-a75f-4132-d0ea-060a132efefc"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nama saya steven tri wahyu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = [1, 2.2, 'plibatam']\n",
+        "print(type(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7wVstLDph5Tg",
+        "outputId": "e4501e71-d4cb-4ac1-89eb-0b69a341b9cc"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'list'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = [1, 'polibatam', True, 1.0]\n",
+        "print(x[2])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QMXhdEL1il2Q",
+        "outputId": "6838ce91-e4bb-4142-aabc-3f9e83ed6450"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel list\n",
+        "numbers = [23, 43, 15, 34]\n",
+        "# cara mengakses dalam variabel list\n",
+        "numbers[0] # 23\n",
+        "numbers[1] # 43\n",
+        "numbers[2] # 15\n",
+        "numbers[3] # 34\n",
+        "# cara mengubah nilai elemen dalam variabel list\n",
+        "numbers[2] # 51\n",
+        "numbers[2] # 51\n",
+        "\n",
+        "print (numbers[1]) #lakukan untuk setiap indexnya dan lihat hasil nya"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XCj3RIifjVwf",
+        "outputId": "f0bfd474-1f18-479e-fd2c-b2311dc4db70"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "43\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = (1, \"polibatam\", 1+3j)\n",
+        "print(type(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PXLzvCAgl8XX",
+        "outputId": "59279098-51a0-49ae-8ef7-0776eea58081"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'tuple'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = {'name': 'steven tri wahyu','age': 21, 'ismarried': False }\n",
+        "x ['name'] = \"steven\"\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gAkrBVR_uLc4",
+        "outputId": "488c61ca-f47f-4b8b-e4f1-bf2f7b77fd0f"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'name': 'steven', 'age': 21, 'ismarried': False}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
